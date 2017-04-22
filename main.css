@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+.nav {
+    background-color: white;
+    position: fixed;
+    width: 300px;
+    transform: translate(-300px, 0);
+    transition: transform 0.3s linear;
+    height: 100%;
+}
+.nav.open {
+    transform: translate(0, 0);
+}
+.nav__item{
+}
+main {
+    background-color: black;
+    height: 100%;
+}
+.header__menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 1em;
+}
+.header__menu svg {
+    width: 32px;
+    fill: #E0E0E0;
+}
+
+@media screen and (min-width: 700px) {
+    .nav {
+        transform: translate(0, 0);
+    }
+    .header__menu svg{
+        display: none;
+    }
+}
